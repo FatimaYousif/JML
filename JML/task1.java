@@ -17,12 +17,12 @@ public class HashTable {
 
 	/*@ invariant h.length=size @*/ 
 
-	public /*@  spec_public non_null @*/ Object[] h;
+	public /*@ non_null @*/ Object[] h;
 	
-	public /*@ spec_public @*/ int size; 
+	public int size; 
 	
 	/*@ invariant capacity >=1 @*/ 
-	public /*@ spec_public @*/ int capacity;
+	public int capacity;
     
     /*@ invariant 0 >= size && size <= capacity; @*/ 
 
