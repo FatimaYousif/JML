@@ -29,8 +29,8 @@ public class BinarySearch {
         //LOOP INVARIANT
 	        /*
             @maintaining (\exists int j; 0<=j && j<leftIndex;numbers [j] <query);
-			@maintaining 0 <= leftIndex && leftIndex<= rightIndex;
-			@decrease rightIndex -leftIndex;
+			@loop_invariant 0 <= leftIndex && leftIndex<= rightIndex;
+			@decreases rightIndex -leftIndex;
 			@assignable \strictly_nothing;
 			@*/
 
