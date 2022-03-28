@@ -65,9 +65,8 @@ public class HashTable {
 
 			//LOOP INVARIANT
 			/*
-			@maintaining \result= (\forall int i; i>=0 && i<\index; i=i+1);
-			@maintaining h[i] != null && \index <capacity;
-			@decrease capacity -\index;
+			@loop_invariant \result= (\forall int i; i>=0 && i<\index; i=i+1);
+			@decreases capacity -\index;
 			@assignable \strictly_nothing
 			@*/
 			
